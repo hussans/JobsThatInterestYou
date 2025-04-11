@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: NeueMontreal-Regular;
+  src: url(/fonts/NeueMontreal-Regular.otf);
+}
+
+@font-face {
+  font-family: NeueMontreal-Medium;
+  src: url(/fonts/NeueMontreal-Medium.otf);
+}
+
+@keyframes loop-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-loop-scroll {
+  animation: loop-scroll 30s linear infinite;
+}
+
+.group:hover .animate-loop-scroll {
+  animation-play-state: paused;
+}
